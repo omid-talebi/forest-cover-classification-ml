@@ -92,7 +92,6 @@ Overall, **KNN provided the best trade-off between accuracy, stability, and gene
 The complete project report (in Persian) is available in:  
 [**reports/report.pdf**](reports/report.pdf)
 
-> **Note:** The report is written in Persian as it was submitted for a university machine learning course. The source code and project documentation are provided in English.
 
 ## Technologies
 
