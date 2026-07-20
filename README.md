@@ -5,11 +5,11 @@
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-## 📋 Project Overview
+## Project Overview
 
 This project is the **third Machine Learning Mini Project** focused on multiclass classification using the **Forest CoverType** dataset. The objective is to predict forest cover types based on topographic and environmental attributes while comparing the performance of multiple classification algorithms.
 
-## 🎯 Objectives
+## Objectives
 
 - Explore and analyze the Forest CoverType dataset
 - Perform data preprocessing and feature scaling
@@ -17,13 +17,13 @@ This project is the **third Machine Learning Mini Project** focused on multiclas
 - Compare model performance using several evaluation metrics
 - Analyze bias-variance tradeoffs
 
-## 🤖 Models Implemented
+## Models Implemented
 
 - K-Nearest Neighbors (KNN)
 - Decision Tree
 - Linear Discriminant Analysis (LDA)
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 forest-cover-classification/
@@ -38,7 +38,7 @@ forest-cover-classification/
 │   └── report.pdf
 ```
 
-## 🚀 How to Run
+## How to Run
 
 ```bash
 git clone https://github.com/omid-talebi/forest-cover-classification.git
@@ -50,7 +50,7 @@ pip install -r requirements.txt
 jupyter notebook main.ipynb
 ```
 
-## 📊 Dataset
+## Dataset
 
 **Forest CoverType Dataset**
 
@@ -61,7 +61,7 @@ The dataset contains:
 - 7 target classes
 - Numerical and binary attributes describing topographic and environmental characteristics
 
-## 📈 Evaluation Metrics
+## Evaluation Metrics
 
 The models are evaluated using:
 
@@ -71,24 +71,24 @@ The models are evaluated using:
 - F1-score
 - Confusion Matrix
 
-## 🏆 Model Comparison
+## Final Results
 
-The project compares the performance of:
+| Model | Test Accuracy | Test Precision | Test Recall | Test F1-score |
+|------|--------------:|---------------:|------------:|--------------:|
+| K-Nearest Neighbors (KNN) | **0.9016** | **0.9006** | **0.9014** | **0.8997** |
+| Decision Tree | 0.8198 | 0.8175 | 0.8198 | 0.8179 |
+| Linear Discriminant Analysis (LDA) | 0.6406 | 0.6497 | 0.6406 | 0.6440 |
 
-| Model | Characteristics |
-|-------|-----------------|
-| KNN | Distance-based non-parametric classifier |
-| Decision Tree | Interpretable tree-based classifier |
-| LDA | Linear probabilistic classifier |
+### Key Findings
 
-The comparison includes discussions of:
+-  **KNN achieved the best overall performance**, obtaining approximately **90% accuracy** while maintaining balanced Precision, Recall, and F1-score.
+-  **Decision Tree showed signs of overfitting**, with very high training accuracy (98%) but noticeably lower performance on the test set.
+-  **LDA provided the lowest performance** because its linear decision boundaries were not flexible enough for this complex multiclass dataset.
 
-- Bias vs Variance
-- Underfitting vs Overfitting
-- Model capacity
-- Validation performance
+Overall, **KNN provided the best trade-off between accuracy, stability, and generalization** for the Forest CoverType classification task.
 
-## 📄 Report
+
+## Report
 
 A detailed project report (written in Persian) is available in:
 
@@ -98,7 +98,7 @@ reports/report.pdf
 
 > **Note:** The report is written in Persian as it was submitted for a university machine learning course. The source code and project documentation are provided in English.
 
-## 🛠 Technologies
+## Technologies
 
 - Python
 - NumPy
@@ -108,6 +108,6 @@ reports/report.pdf
 - Scikit-learn
 - Jupyter Notebook
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for more information.
